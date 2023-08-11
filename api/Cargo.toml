@@ -1,5 +1,5 @@
 [package]
-name = "surreality-server"
+name = "surreality-api"
 version = "0.1.0"
 edition = "2021"
 authors = ["Xavier2p <https://github.com/Xavier2p>"]

@@ -1674,7 +1674,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "surreality-server"
+name = "surreality-api"
 version = "0.1.0"
 dependencies = [
  "serde",
