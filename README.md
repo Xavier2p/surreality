@@ -1,9 +1,9 @@
-> Warning
-> This is a work in progress. It is not ready for production use.
-
 # Surreality
 
-> A NewGen Portfolio
+*A NewGen Portfolio*
+
+> **Warning**  
+> This project is work in progress, so it's not working today.
 
 ## Stack
 
