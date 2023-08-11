@@ -1,9 +1,9 @@
+> **Warning**  
+> This project is work in progress, so it's not working today.
+
 # Surreality
 
 *A NewGen Portfolio*
-
-> **Warning**  
-> This project is work in progress, so it's not working today.
 
 ## Stack
 
