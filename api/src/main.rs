@@ -11,7 +11,8 @@ fn world() -> &'static str {
 /// The main entry point for the API server.
 #[rocket::main]
 async fn main() -> Result<(), rocket::Error> {
-    let _rocket = rocket::build().mount("/", routes![world]).launch().await?;
+    let _rocket: rocket::Rocket<rocket::Ignite> =
+        rocket::build().mount("/", routes![world]).launch().await?;
 
     Ok(())
 }
