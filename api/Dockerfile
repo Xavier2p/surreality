@@ -1,4 +1,4 @@
-FROM rust:1-alpine3.18 as builder
+FROM rust:latest as builder
 WORKDIR /usr/src/app
 COPY . .
 RUN cargo install --path .
