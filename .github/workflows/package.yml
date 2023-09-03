@@ -4,17 +4,17 @@ name: Publish Package
 on:
   push:
     tags:
-      - 'v*'
+      - 'package-v*'
 
 jobs:
-  release:
+  package:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
 
-      - name: Publish Release
+      - name: Publish Package
         run: |
-          echo "Publishing Release"
-          echo "Release ${{ github.ref_name }} published"
+          echo "Publishing Package"
+          echo "Package ${{ github.ref_name }} published"
