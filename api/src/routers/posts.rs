@@ -15,14 +15,9 @@ fn generate_post(id: i32) -> Post {
     }
 }
 
-#[get("/posts/<id>")]
+#[get("/<id>")]
 pub async fn get_one(id: i32) -> Result<Json<responses::Data<Post>>, http::Status> {
-    //  Json<responses::Message>> {
     if id < 10 {
-        // Err(responses::Message::new(
-        //     http::Status::NotFound,
-        //     "Post not found".to_string(),
-        // ))
         Err(http::Status::NotFound)
     } else {
         let post: Post = generate_post(id);
@@ -35,4 +30,21 @@ pub async fn get_one(id: i32) -> Result<Json<responses::Data<Post>>, http::Statu
 
         Ok(Json(response))
     }
+}
+
+#[get("/")]
+pub async fn get_all() -> Result<Json<responses::Data<Vec<Post>>>, http::Status> {
+    let mut posts: Vec<Post> = Vec::new();
+
+    for i in 0..10 {
+        posts.push(generate_post(i));
+    }
+
+    let response: responses::Data<Vec<Post>> = responses::Data {
+        status: http::Status::Ok.code,
+        message: "Posts found".to_string(),
+        data: posts,
+    };
+
+    Ok(Json(response))
 }
