@@ -10,5 +10,5 @@ overrides:
       printWidth: 80
   - files: "*.tsx"
     options:
-      tabWidth: 2
+      tabWidth: 4
       printWidth: 120

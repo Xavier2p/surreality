@@ -1,21 +1,13 @@
-import { useState } from 'react';
-import { AppShell, Button, Group } from '@mantine/core';
-import SiteHeader from './components/header';
+import { MantineProvider } from '@mantine/core';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './components/layout';
 
-const Surreality = () => {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <AppShell padding="md" header={<SiteHeader />}>
-        <Group position="center">
-          <Button color="yellow" onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </Button>
-        </Group>
-      </AppShell>
-    </>
-  );
-};
+const Surreality = () => (
+    <MantineProvider withGlobalStyles withNormalizeCSS>
+        <BrowserRouter>
+            <Layout />
+        </BrowserRouter>
+    </MantineProvider>
+);
 
 export default Surreality;

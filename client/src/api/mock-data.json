@@ -1,0 +1,130 @@
+{
+    "users": [
+        {
+            "id": "user1",
+            "name": "John Doe",
+            "avatarUrl": "https://example.com/avatar1.png"
+        },
+        {
+            "id": "user2",
+            "name": "Alice Smith",
+            "avatarUrl": "https://example.com/avatar2.png"
+        },
+        {
+            "id": "user3",
+            "name": "Bob Johnson",
+            "avatarUrl": "https://example.com/avatar3.png"
+        }
+    ],
+    "posts": [
+        {
+            "id": "post1",
+            "author": {
+                "id": "user1",
+                "name": "John Doe",
+                "avatarUrl": "https://example.com/avatar1.png"
+            },
+            "comments": [
+                {
+                    "id": "comment1",
+                    "author": {
+                        "id": "user2",
+                        "name": "Alice Smith",
+                        "avatarUrl": "https://example.com/avatar2.png"
+                    },
+                    "comment": "Great photo!",
+                    "postedAt": "2023-09-08T10:00:00Z",
+                    "postId": "post1"
+                },
+                {
+                    "id": "comment2",
+                    "author": {
+                        "id": "user3",
+                        "name": "Bob Johnson",
+                        "avatarUrl": "https://example.com/avatar3.png"
+                    },
+                    "comment": "Beautiful shot!",
+                    "postedAt": "2023-09-08T11:30:00Z",
+                    "postId": "post1"
+                }
+            ],
+            "description": "A stunning sunset over the Golden Gate Bridge.",
+            "exif": {
+                "aperture": "f/2.8",
+                "camera": "Canon EOS 5D Mark IV",
+                "dateTime": "2023-09-08T08:45:00Z",
+                "exposureTime": "1/500",
+                "focalLength": "50mm",
+                "iso": "100",
+                "latitude": "37.7749° N",
+                "lens": "Canon EF 50mm f/1.8 STM",
+                "location": "San Francisco, CA",
+                "longitude": "122.4194° W",
+                "shutterSpeed": "1/500"
+            },
+            "hidden": false,
+            "imageUrl": "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80",
+            "likes": 256,
+            "postedAt": "2023-09-08T12:00:00Z",
+            "title": "Golden Gate Sunset",
+            "seriesId": "series1"
+        },
+        {
+            "id": "post2",
+            "author": {
+                "id": "user1",
+                "name": "John Doe",
+                "avatarUrl": "https://example.com/avatar1.png"
+            },
+            "comments": [
+                {
+                    "id": "comment2",
+                    "author": {
+                        "id": "user3",
+                        "name": "Bob Johnson",
+                        "avatarUrl": "https://example.com/avatar3.png"
+                    },
+                    "comment": "Beautiful shot!",
+                    "postedAt": "2023-09-08T11:30:00Z",
+                    "postId": "post1"
+                }
+            ],
+            "description": "Morning coffee with a view.",
+            "exif": {
+                "aperture": "f/2.8",
+                "camera": "Canon EOS 5D Mark IV",
+                "dateTime": "2023-09-08T08:45:00Z",
+                "exposureTime": "1/500",
+                "focalLength": "50mm",
+                "iso": "100",
+                "latitude": "37.7749° N",
+                "lens": "Canon EF 50mm f/1.8 STM",
+                "location": "San Francisco, CA",
+                "longitude": "122.4194° W",
+                "shutterSpeed": "1/500"
+            },
+            "hidden": false,
+            "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80",
+            "likes": 98,
+            "postedAt": "2023-09-08T09:30:00Z",
+            "title": "Coffee Time",
+            "seriesId": "series2"
+        }
+    ],
+    "series": [
+        {
+            "id": "series1",
+            "name": "San Francisco",
+            "description": "A collection of photos from my trip to San Francisco.",
+            "imageUrl": "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80",
+            "postedAt": "2023-09-08T12:00:00Z"
+        },
+        {
+            "id": "series2",
+            "name": "Coffee",
+            "description": "A collection of photos of coffee.",
+            "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80",
+            "postedAt": "2023-09-08T09:30:00Z"
+        }
+    ]
+}
